@@ -7,6 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * getDerivedStateFromProps method
 * Routing guard (history redux-auth-wrapper needed dependencies)
 
+## Extra features
+* User sign in account
+    * Passwords matching validation
+    * User/pasword invalida on login message
+* Error component with dynamic messages
+
 In the project directory, you can run:
 
 ### `npm start`

@@ -15,6 +15,7 @@ import PrestamoLibro from './componentes/libros/PrestamoLibro';
 import EditarLibro from './componentes/libros/EditarLibro';
 import NuevoLibro from './componentes/libros/NuevoLibro';
 import Login from './componentes/auth/Login';
+import SignIn from './componentes/auth/SignIn';
 
 //these are function to check that path are need to be autenticated and which not
 import { UserIsNotAuthenticated, UserIsAuthenticated } from './helpers/auth';
@@ -36,6 +37,7 @@ function App() {
             <Route exact path="/suscriptores/mostrar/:id" component={UserIsAuthenticated(MostrarSuscriptor)}/>
             <Route exact path="/suscriptores/editar/:id" component={UserIsAuthenticated(EditarSuscriptor)}/>
             <Route exact path="/login" component={UserIsNotAuthenticated(Login)}/>
+            <Route exact path="/sign-in" component={UserIsNotAuthenticated(SignIn)}/>
           </Switch>
         </div>
       </Router>
